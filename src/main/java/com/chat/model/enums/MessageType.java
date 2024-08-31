@@ -1,8 +1,8 @@
 package com.chat.model.enums;
 
 public enum MessageType {
-    TEXT,
-    IMAGE,
-    VIDEO,
-    AUDIO
+    text,
+    image,
+    video,
+    audio
 }

@@ -1,4 +1,4 @@
-package com.chat.Configuration;
+package com.chat.configuration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +26,7 @@ public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer 
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/ws").setAllowedOrigins("*") ;
+        registry.addEndpoint("/ws").setAllowedOrigins("*");
 
         // registry.addEndpoint("/ws").withSockJS();
     }

@@ -1,4 +1,4 @@
-package com.chat.Configuration;
+package com.chat.configuration;
 
 
 import lombok.RequiredArgsConstructor;

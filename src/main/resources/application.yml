@@ -9,12 +9,20 @@ spring:
             lifecycle-management: start_and_stop
     data:
         mongodb:
-            username: belcaid
-            password: belcaid2001
-            host: localhost
-            port: 27017
+            uri: mongodb://localhost:27017/chat_app
             database: chat_app
-            authentication-database: admin
+
+
+    servlet:
+        multipart:
+            enabled: true
+            max-file-size: 1000MB
+            max-request-size: 1000MB
+    mvc:
+        throw-exception-if-no-handler-found: true
+        async:
+            request-timeout: 3600000
+
 
 server:
-    port: 8088
+    port: 8080
